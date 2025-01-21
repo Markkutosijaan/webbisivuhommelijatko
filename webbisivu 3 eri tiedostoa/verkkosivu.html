@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="tyyli.css">
+  <title>Kivat Kissat</title>
+</head>
+<body>
+  <header>
+    <h1>Tervetuloa!</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Etusivu</a></li>
+        <li><a href="#about">Tietoa</a></li>
+        <li><a href="#contact">Yhteystiedot</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- etusivu hommeli -->
+    <section id="home" class="section">
+      <h2>Etusivu</h2>
+      <p>Tämä on kivojen kissojen verkkosivu. Tutustu lisää alempana!</p>
+      <img src="kissa.jpg" alt="Suloinen kissa" />
+    </section>
+
+    <!-- tiedot osio -->
+    <section id="about" class="section">
+      <h2>Tietoa</h2>
+      <p>Kissat ovat ihania eläimiä minullakin on kaksi kissaa Viiru ja Miiru!</p>
+      <p><a href="https://fi.wikipedia.org/wiki/Kissa" target="_blank">Lue lisää kissoista Wikipediasta</a></p>  <!-- kuva otettu googlesta salaa ei käyttöoikeuksia oikeesti -->
+    </section>
+
+    <!-- yhteystiedot osio koodissa tosijaan -->
+    <section id="contact" class="section">
+      <h2>Yhteystiedot</h2>
+      <p>Voit ottaa yhteyttä kiisu foorumin johtoon allaolevalla lomakkeella:</p>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Nimesi" required>
+        <input type="email" id="email" placeholder="Sähköpostisi" required>
+        <textarea id="message" placeholder="Viestisi" required></textarea>
+        <button type="submit">Lähetä</button>
+      </form>
+      <p id="formFeedback"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; ei saa kopioida kiisujen sivuja :/</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
